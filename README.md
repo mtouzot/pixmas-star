@@ -1,5 +1,5 @@
 # Programmable Christmas Tree Star (ongoing fork)
-![banner](https://github.com/modmypi/Programmable-Christmas-Star/blob/master/github_star.png)
+![banner](./docs/assets/github_star.png)
 
 Bring some Raspberry Pi based festive cheer to your Christmas this year with the ModMyPi [Christmas Star](https://www.modmypi.com/raspberry-pi-christmas-tree-star) and bring your tree to life!
 
