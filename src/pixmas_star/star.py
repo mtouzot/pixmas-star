@@ -1,11 +1,13 @@
-from gpiozero import LEDBoard
+from gpiozero import LEDBoard, Device
+from gpiozero.pins.rpigpio import RPiGPIOFactory
+
+
 class Star(LEDBoard):
-    # Set up a Star using GPIO Zero to build a class.
-    # To use:
-    # star = Star() for a simple instance using LED class.
-    # star = Star(pwm=True) for a version which can use PWM.
-    # See example files in this repo for more examples of use...
     def __init__(self, pwm=False, initial_value=False, pin_factory=None):
+        # Use the RPiGPIOFactory if pin_factory is not provided
+        if pin_factory is None:
+            pin_factory = RPiGPIOFactory()  # Set to RPi.GPIO pin factory
+
         super(Star, self).__init__(
             outer=LEDBoard(
                 A=8,B=7,C=12,D=21,E=20,F=16,G=26,H=19,I=13,J=6,K=5,L=11,M=9,
@@ -19,4 +21,4 @@ class Star(LEDBoard):
             _order=('inner','outer'),
             pin_factory=pin_factory
             )
-
+        self.off()
