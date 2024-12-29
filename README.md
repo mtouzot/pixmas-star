@@ -7,7 +7,7 @@ Bring some Raspberry Pi based festive cheer to your Christmas this year with the
 
 This repository should be used by cloning the repo first using
 
-`git clone https://github.com/mtouzot/Programmable-Christmas-Star`
+`git clone https://github.com/mtouzot/pixmas-star`
 
 Which will give you a copy locally.
 
@@ -16,7 +16,7 @@ Inside there is a script called `star.py` which contains a [GPIO Zero](https://g
 To switch on the Star you can use:
 
 ```
-from star import Star
+from pixmas_star.star import Star
 
 star = Star()
 

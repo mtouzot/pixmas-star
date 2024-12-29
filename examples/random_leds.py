@@ -1,4 +1,7 @@
-from star import Star
+# SPDX-FileCopyrightText: 2024-present Martin TOUZOT <martin.touzot@gmail.com>
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+from pixmas_star.star import Star
 from gpiozero.tools import random_values
 from signal import pause
 

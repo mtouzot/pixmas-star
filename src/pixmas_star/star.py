@@ -19,4 +19,4 @@ class Star(LEDBoard):
             _order=('inner','outer'),
             pin_factory=pin_factory
             )
-        
+
