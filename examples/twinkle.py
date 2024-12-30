@@ -11,6 +11,6 @@ try:
     while True:
         for led in leds:
             led.pulse()
-            sleep(.2)
+            sleep(0.2)
 except KeyboardInterrupt:
     star.close()

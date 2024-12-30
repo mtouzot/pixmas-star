@@ -10,6 +10,6 @@ try:
     star.inner.on()
     while True:
         star.toggle()
-        sleep(.5)
+        sleep(0.5)
 except KeyboardInterrupt:
     star.close()
